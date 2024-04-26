@@ -1,0 +1,29 @@
+git remote add origin https://github.com/celecigo/lenguaje-c-.git
+
+# include <stdio.h>
+# include <math.h>
+#include <iostream>
+
+int main()
+{
+    float b1,b2,a,Area;
+
+	printf("\ncalculando area de un trapezoide:\n");
+
+	printf("Ingrese valor de la base1=");
+	scanf("%f",&b1);
+	
+	printf("Ingrese valor de la base2=");
+	scanf("%f",&b2);
+	
+	printf("Ingrese valor de la altura=");
+	scanf("%f",&a);
+	
+	Area = (b1+b2)*(a)/2;
+	printf("El area de un trapezoide es =%f",Area);
+	
+	
+
+
+	return 0;
+}
