@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main()
+{
+int n, i, k, nums[88];
+int buscar_num;
+int num_encontrado =0;
+
+printf("Ingrese un numero entero entre 0 y 88:");
+scanf("%d", &n);
+	// si el numero  introcudido esta entre 0-88
+ if(n>0 && n <=88)
+ {
+	 k=0;
+		//inicia a llenar el arreglo
+		for(i=0;i<88;i++)
+		{
+			nums[i] = k;
+			k++;
+		}
+	  	// termina de llenar el arreglo 
+     	
+	     for(i = 0;i < 88; i++)
+        {
+    	  printf("nums[%d] = %d\n", i,nums[i]);
+  		}
+  		 printf("Buscar numero:");
+    	scanf("%d", &buscar_num);
+    	for(i = 0;i < 88; i++){
+    	 
+		  if(nums[i] == buscar_num){
+		  	num_encontrado = 1;
+		    break;
+		  }
+    	
+	}
+	if(num_encontrado){
+	  printf("El numero  se encuentra en la posicion %d:",i);
+		}
+		else{
+		 printf("Numero no encontrado");
+		}
+}
+else
+    {
+	  printf("ingrese un numero correcto");
+	}
+		
+return 0;
+}
