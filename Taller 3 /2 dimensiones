@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include <stdlib.h>
+int main(){
+   
+   int arreglo[9][9];
+   int i, j, n;
+   int buscar_num;
+   int encontrar_num =0;
+   int k=0;
+   
+    printf("Ingrese un numero:");
+    scanf("%d", &n);
+    
+   for(i=0; i<9; i++) {
+      for(j=0; j<9; j++) {
+        arreglo[i][j] = n+k;
+        k++;
+        printf("%d",arreglo[i][j]);
+      }
+   }
+
+   printf("Buscar Numero:\n");
+   scanf("%d",&buscar_num);
+   
+   for(i=0; i<9; i++) {
+      for(j=0; j<9; j++) {
+         if(arreglo[i][j] == buscar_num){
+            encontrar_num=1;
+            printf("El numero %d se encuentra en %d, %d del arreglo",buscar_num,i ,j);
+            break;
+            
+         }
+         else{
+         	printf("El numero no se encuentra");
+		 }
+     }
+      }
+     
+      return 0;
+}
